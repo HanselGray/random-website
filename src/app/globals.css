@@ -14,13 +14,24 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #23272F;
+    --background: #6AB9D9;
     --foreground: #ededed;
   }
+}
+
+button {
+  cursor: pointer;
+  @apply text-white;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.searchbar {
+  border: 1px #ffffff;
+  background: #2e4d69;
+  margin-top: 50px;
 }
