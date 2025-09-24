@@ -6,7 +6,7 @@ import Image from "next/image"
 function HomeButton() {
     const router = useRouter()
     return (
-        <button className="cursor-pointer" onClick={() => router.push("/")} ><Image src="/home-icon.png" alt="Home" width={32} height={32} />
+        <button  onClick={() => router.push("/")} ><Image src="/home-icon.png" alt="Home" width={32} height={32} />
 </button>
     )
 }
@@ -14,21 +14,21 @@ function HomeButton() {
 function FoodButton() {
     const router = useRouter()
     return (
-        <button className="cursor-pointer" onClick={() => router.push("/food")} >Food</button>
+        <button  onClick={() => router.push("/food")} >Food</button>
     )
 }
 
 function AboutButton() {
     const router = useRouter()
     return (
-        <button className="cursor-pointer" onClick={() => router.push("/about")} >About</button>
+        <button  onClick={() => router.push("/about")} >About</button>
     )
 }
 
 function ContactsButton() {
     const router = useRouter()
     return (
-        <button className="cursor-pointer" onClick={() => router.push("/contacts")} >Contacts</button>
+        <button onClick={() => router.push("/contacts")} >Contacts</button>
     )
 }
 
